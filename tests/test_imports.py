@@ -8,7 +8,7 @@ def test_import_importlib():
 def test_import_pyfar():
     import pyfar
     __all__ = [pyfar]
-    return __all__
+    assert __all__
 
 
 def test_import_classes():
@@ -33,7 +33,7 @@ def test_import_classes():
         FilterFIR,
         FilterIIR
     ]
-    return __all__
+    assert __all__
 
 
 def test_import_submodules():
